@@ -1,0 +1,85 @@
+.s_container{
+    position: relative;
+}
+
+
+/* the swiper and its elements can be called as a class since it comes from the librabry */
+.s_container .swiper{
+    width: 70%;
+    height: 12rem;
+    position: unset;
+}
+.s_container .swiper-slide{
+    background:  #fff;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.s_container .swiper-button-prev{
+    left: 6rem;
+}
+.s_container .swiper-button-next{
+    right: 6rem;
+}
+.s_container .swiper-button-prev, .s_container .swiper-button-next{
+    color: #000;
+}
+
+
+.left_s{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left_s>:nth-child(2){
+    font-weight: bold;
+    font-size: 2rem;
+}
+.left_s>:nth-child(3){
+    font-size: 0.6rem;
+    border: 1px solid var(--black);
+    padding: 5px 10px;
+    width: max-content;
+    border-radius: 15px;
+}
+
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name>:first-child{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.name>:nth-child(2){
+    font-size: 0.7rem;
+}
+
+.product_img{
+    transform: rotate(-20deg);
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    bottom: -20%;
+}
+
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 856px) {
+    .s_container .swiper{
+        width: 90%;
+        height: 10rem;
+    }
+    .s_container .swiper-button-prev,
+    .s_container .swiper-button-next{
+        display: none;
+    }
+
+    
+}
