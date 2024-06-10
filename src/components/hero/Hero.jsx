@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './Hero.module.css'
-import HeroImg from '../../assets/hero.png'
+import HeroImg from '../../assets/img11.png'
 import {GiShoppingBag} from 'react-icons/gi'
 import {BiRightArrowAlt} from 'react-icons/bi'
 //import framer motion
@@ -15,11 +15,11 @@ import { motion } from "framer-motion"
 
         {/* left side */}
         <div className={css.h_sides}>
-            <span className={css.text1}>Skin protection cream</span>
+            <span className={css.text1}>Skin care products</span>
 
             <div className={css.text2}>
-                <span>Trendy Collection</span>
-                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, voluptas.</span>
+                <span>Luxury Brands</span>
+                <span>You Never go out of trend with our carefully selected class of luxury brands</span>
             </div>
         </div>
 
@@ -63,12 +63,12 @@ import { motion } from "framer-motion"
         {/* right side */}
         <div className={css.h_sides}>
             <div className={css.traffic}>
-                <span>1.5m</span>
+                <span>3M</span>
                 <span>Monthly Traffic</span>
             </div>
 
             <div className={css.customers}>
-                <span>100k</span>
+                <span>500K</span>
                 <span>Happy Customers</span>
             </div>
         </div>

@@ -12,7 +12,7 @@ const Products = () => {
     }
 
   return (
-    <div className={css.container}>
+    <div id="product" className={css.container}>
         <img src={Plane} alt="" />
         <h1>Our Feature Products</h1>
 

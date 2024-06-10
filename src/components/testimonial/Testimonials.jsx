@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './Testimonials.module.css'
-import Hero from '../../assets/testimonialHero.png'
+import Hero from '../../assets/img12.png'
 import {TestimonialsData} from '../../data/testimonials'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -11,7 +11,7 @@ const Testimonials = () => {
             <div className={css.container}>
                 <span>Top Rated</span>
                 <span>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, dignissimos!
+                    Our Liquid make up saves the day everytime
                 </span>
             </div>
 
@@ -52,7 +52,7 @@ const Testimonials = () => {
                     TestimonialsData.map((testimonial, i) => (
                         <SwiperSlide>
                             <div className={css.testimonial}>
-                                <img src={testimonial.image} alt="" />
+                                {/* <img src={testimonial.image} alt="" /> */}
                                 <span>{testimonial.comment}</span>
                                     
                                 <hr/>

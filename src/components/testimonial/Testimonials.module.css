@@ -14,7 +14,7 @@
     /* the grid template columns command makes elements in wrapper to display flex with the middle element occupying the biggest space */
 }
 .wrapper>img{
-    width: 25rem;
+    width: 15rem;
     justify-self: center;
 }
 .container{
@@ -77,7 +77,7 @@
 .testimonial>hr{
     height: 1px;
     width: 88%;
-    background: red;
+    background: grey;
     border: none;
 }
 
@@ -88,7 +88,7 @@
         grid-template-columns: 1fr;
     }
     .wrapper>img{
-        width: 80vw;
+        width: 40vw;
     }
     .wrapper>:nth-child(3), .wrapper>:nth-child(1){
         text-align: center;
