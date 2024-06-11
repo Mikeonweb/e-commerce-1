@@ -6,11 +6,7 @@ import { CgMenuRound } from "react-icons/cg";
 
 const Header = () => {
   // usestate command for mobile menu
-  const [showMenu, setShowMenu] = useState(true);
-  //toggle menu function
-  const toggleMenu = () =>
-    //this command tells the menu to open onclick but if its in open state then it should close
-    setShowMenu((showMenu) => !showMenu);
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className={css.container}>
@@ -23,7 +19,7 @@ const Header = () => {
 
       <div className={css.right}>
         {/* mobile menu */}
-        <div className={css.bars} onClick={toggleMenu}>
+        <div className={css.bars} onClick={()=> setShowMenu(!showMenu)} >
           <CgMenuRound />
         </div>
 
